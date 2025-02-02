@@ -1,0 +1,50 @@
+{
+  "app-users": [
+    {
+      "id": "9c10",
+      "username": "damon",
+      "password": "pass"
+    },
+    {
+      "id": "5bd1",
+      "username": "test",
+      "password": "test1"
+    },
+    {
+      "id": "c750",
+      "username": "BillyBob",
+      "password": "Thorton"
+    },
+    {
+      "id": "fea8",
+      "username": "test2",
+      "password": "null"
+    }
+  ],
+  "movies": [
+    {
+      "id": "1",
+      "title": "The Matrix"
+    },
+    {
+      "id": "2",
+      "title": "Braveheart"
+    },
+    {
+      "id": "3",
+      "title": "Die Hard"
+    },
+    {
+      "id": "4",
+      "title": "Saving Private Ryan"
+    },
+    {
+      "id": "5",
+      "title": "Django"
+    },
+    {
+      "id": "6",
+      "title": "Generation Kill"
+    }
+  ]
+}
