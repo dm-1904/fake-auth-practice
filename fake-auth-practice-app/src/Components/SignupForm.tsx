@@ -7,11 +7,14 @@ export const SignUp = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSignUp = async (e: React.FormEvent) => {
+  const handleSignUp = (e: React.FormEvent) => {
     e.preventDefault();
 
     try {
-      await Requests.postData("app-users", { username, password });
+      Requests.postData("app-users", { username, password }).then(
+        (user) => localStorage.setItem("user", JSON.stringify(user))
+        //adding to local storage and logout button in Auth.Provider
+      );
       toast.success("Registered successfully");
       setUsername("");
       setPassword("");

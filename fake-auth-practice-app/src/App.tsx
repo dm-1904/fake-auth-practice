@@ -2,7 +2,7 @@ import "./App.css";
 import { MovieList } from "./Components/MoviesList";
 import { SignUp } from "./Components/SignupForm";
 import { LogIn } from "./Components/LoginForm";
-import { MakeMovie } from "./Components/CreateMovie";
+// import { MakeMovie } from "./Components/CreateMovie";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <MovieList />
       <SignUp />
       <LogIn />
-      <MakeMovie />
+      {/* <MakeMovie /> */}
     </>
   );
 }

@@ -1,4 +1,5 @@
 {
+  "favorites": [],
   "app-users": [
     {
       "id": "9c10",
@@ -19,6 +20,11 @@
       "id": "fea8",
       "username": "test2",
       "password": "null"
+    },
+    {
+      "id": "49b3",
+      "username": "LocalUser",
+      "password": "test"
     }
   ],
   "movies": [

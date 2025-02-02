@@ -84,4 +84,22 @@ export const Requests = {
         throw new Error(`Failed to PATCH item with error: ${error.message}`);
       });
   },
+  getUserFromServer: ({ username }: { username: string }) => {
+    fetch(`${API_URL}/app-users`)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`Could not get user ${res.status}`);
+        }
+        return res.json();
+      })
+      .then((users: { username: string }[]) =>
+        users.find((user) => user.username === username)
+      )
+      .then((user) => {
+        if (!user) {
+          throw new Error(`User not found`);
+        }
+        return user;
+      });
+  },
 };
